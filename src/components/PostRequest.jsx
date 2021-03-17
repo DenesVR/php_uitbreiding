@@ -10,6 +10,7 @@ function PostRequest() {
     <form
       onSubmit={e => {
         e.preventDefault();
+        window.location.href = "/home";
         axios
           .post(
             `http://localhost:8081/php2oefeningen/oef2-2/api/btwcodes`,
