@@ -19,7 +19,7 @@ function App() {
               <Link to="/post">TOEVOEGEN</Link>
             </li>
             <li>
-              <Link to="/put">PUT</Link>
+              <Link to="/btw/">Detail</Link>
             </li>
           </ul>
         </nav>

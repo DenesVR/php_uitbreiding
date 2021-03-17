@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import DetailData from "./DetailData";
 import PutRequest from "./PutRequest";
+import DeleteRequest from "./DeleteRequest";
 
 function DetailPage() {
   const { id } = useParams();
@@ -19,6 +20,7 @@ function DetailPage() {
       <h1>Detail</h1>
       {data && <DetailData btw={data} />}
       {data && <PutRequest btw={data} />}
+      {data && <DeleteRequest btw={data} />}
     </div>
   );
 }
