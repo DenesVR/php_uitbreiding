@@ -15,7 +15,7 @@ function PostRequest() {
             `http://localhost:8081/php2oefeningen/oef2-2/api/btwcodes`,
             btwcodeValue
           )
-          .then(Response => console.log(Response));
+          .then(res => console.log(res));
       }}
     >
       <input
