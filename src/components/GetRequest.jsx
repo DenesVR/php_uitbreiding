@@ -10,20 +10,11 @@ function GetRequest() {
     axios(`http://localhost:8081/php2oefeningen/oef2-2/api/btwcodes`)
       .then(Response => {
         SetBtwcodes(Response.data.data);
-        //console.log(btwcodes);
+        console.log(Response.data.data.eub_id);
       })
       .catch(error => {});
   }, []);
-  return (
-    // <Link to={`/btw/${btwcodes.eub_id}`}>
-    //   <ul>
-    //     {btwcodes.map(btwcode => (
-    //       <li key={btwcode.eub_id}>{btwcode.eub_land}</li>
-    //     ))}
-    //   </ul>
-    // </Link>
-    <Btw btwcodes={btwcodes} />
-  );
+  return <Btw btwcodes={btwcodes} />;
 }
 
 export default GetRequest;
