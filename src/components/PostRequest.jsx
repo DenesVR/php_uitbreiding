@@ -11,6 +11,7 @@ function PostRequest() {
       onSubmit={e => {
         e.preventDefault();
         window.location.href = "/home";
+        //alert("Weer eentje erbij!");
         axios
           .post(
             `http://localhost:8081/php2oefeningen/oef2-2/api/btwcodes`,

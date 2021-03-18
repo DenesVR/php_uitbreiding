@@ -7,7 +7,7 @@ function Btw({ btwcodes }) {
       <ul>
         {btwcodes.map(btwcode => (
           <li key={btwcode.eub_id}>
-            {btwcode.eub_land} - {btwcode.eub_code}
+            {btwcode.eub_id} - {btwcode.eub_land} - {btwcode.eub_code}
           </li>
         ))}
       </ul>

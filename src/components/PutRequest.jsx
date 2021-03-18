@@ -11,6 +11,7 @@ function PutRequest({ btw: [{ eub_id, eub_land, eub_code }] }) {
       onSubmit={e => {
         e.preventDefault();
         window.location.reload(true);
+        //alert("Aangepast!");
         axios
           .put(
             `http://localhost:8081/php2oefeningen/oef2-2/api/btwcode/${eub_id}`,
