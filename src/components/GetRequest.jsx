@@ -10,7 +10,7 @@ function GetRequest() {
     axios(`http://localhost:8081/php2oefeningen/oef2-2/api/btwcodes`)
       .then(Response => {
         SetBtwcodes(Response.data.data);
-        console.log(Response.data.data.eub_id);
+        //console.log(Response.data.data.eub_id);
       })
       .catch(error => {});
   }, []);
