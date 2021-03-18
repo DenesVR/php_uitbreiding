@@ -17,7 +17,7 @@ function DetailPage() {
   }, [id]);
   return (
     <div>
-      <h1>Detail</h1>
+      <h1 className="detailTitel">Detail</h1>
       {data && <DetailData btw={data} />}
       {data && <PutRequest btw={data} />}
       {data && <DeleteRequest btw={data} />}

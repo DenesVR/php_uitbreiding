@@ -34,7 +34,7 @@ function PutRequest({ btw: [{ eub_id, eub_land, eub_code }] }) {
           setBtwcodeValue({ ...btwcodeValue, code: e.target.value });
         }}
       />
-      <button>Change</button>
+      <button className="change">Change</button>
     </form>
   );
 }

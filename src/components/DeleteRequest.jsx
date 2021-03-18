@@ -15,7 +15,7 @@ function DeleteRequest({ btw: [{ eub_id }] }) {
           .then(res => console.log(res));
       }}
     >
-      <button>Delete</button>
+      <button className="delete">Delete</button>
     </form>
   );
 }

@@ -8,6 +8,7 @@ function PostRequest() {
   });
   return (
     <form
+      className="post"
       onSubmit={e => {
         e.preventDefault();
         window.location.href = "/home";
@@ -36,7 +37,8 @@ function PostRequest() {
           setBtwcodeValue({ ...btwcodeValue, code: e.target.value });
         }}
       />
-      <button>Add</button>
+      <br />
+      <button className="add">Add</button>
     </form>
   );
 }
