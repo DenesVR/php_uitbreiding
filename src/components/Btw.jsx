@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 
 function Btw({ btwcodes }) {
   return (
-    // <Link to={`/btw/${btwcodes.eub_id}`}>
-    /* <p>
-        <pre>{JSON.stringify(btwcodes)}</pre>
-      </p> */
     <ul>
       {btwcodes.map(btwcode => (
         <Link to={`/btw/${btwcode.eub_id}`}>
